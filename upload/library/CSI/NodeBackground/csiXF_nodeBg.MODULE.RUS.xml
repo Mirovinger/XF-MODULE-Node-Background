@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright © 2015 CYBERSPACE Industries. All rights reserved.
+  Contacts: http://cyberspace.industries/
+  License: LICENSE.ENG.txt
+-->
+<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.0" version_id="1" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <admin_template_modifications/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <email_template_modifications/>
+  <optiongroups>
+    <group group_id="csiXF_nodeBg" display_order="99999999" debug_only="0"/>
+    <option option_id="csiXF_nodeBg_fileExt" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value><![CDATA[png]]></default_value>
+      <edit_format_params></edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="csiXF_nodeBg" display_order="1"/>
+    </option>
+    <option option_id="csiXF_nodeBg_extraCSS" edit_format="textbox" data_type="string" can_backup="1">
+      <default_value><![CDATA[background-attachment: fixed;
+background-size: cover;
+height: 100%;]]></default_value>
+      <edit_format_params>rows=10</edit_format_params>
+      <sub_options></sub_options>
+      <relation group_id="csiXF_nodeBg" display_order="2"/>
+    </option>
+  </optiongroups>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases>
+    <phrase title="option_csiXF_nodeBg_fileExt" version_id="1" version_string="1.0.0"><![CDATA[Расширение изображений]]></phrase>
+    <phrase title="option_csiXF_nodeBg_fileExt_explain" version_id="1" version_string="1.0.0"><![CDATA[Укажите расширение изображений, которые используются в качестве фона узлов.]]></phrase>
+    <phrase title="option_csiXF_nodeBg_extraCSS" version_id="1" version_string="1.0.0"><![CDATA[Дополнительные свойства CSS]]></phrase>
+    <phrase title="option_csiXF_nodeBg_extraCSS_explain" version_id="1" version_string="1.0.0"><![CDATA[Введите дополнительные свойства CSS, которые будут применены к фону узла.]]></phrase>
+    <phrase title="option_group_csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF/MODULE) Фон узла]]></phrase>
+    <phrase title="option_group_csiXF_nodeBg_description" version_id="1" version_string="1.0.0"><![CDATA[Настройки фона для узлов.]]></phrase>
+  </phrases>
+  <route_prefixes/>
+  <style_properties/>
+  <templates>
+    <template title="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[<xen:if is="{$category.node_id} OR {$forum.node_id}">
+  <style type='text/css'>
+    .node{$forum.node_id} #headerMover {
+      background-image: url('{xen:property imagePath}/nodebg/node_{$forum.node_id}.{$xenOptions.csiXF_nodeBg_fileExt}');
+      {xen:raw $xenOptions.csiXF_nodeBg_extraCSS}
+    }
+  </style>
+</xen:if>]]></template>
+  </templates>
+  <public_template_modifications>
+    <modification template="PAGE_CONTAINER" modification_key="csiXF_nodeBg" description="Добавление шаблона &quot;csiXF_nodeBg&quot;" execution_order="99999999" enabled="1" action="str_replace">
+      <find><![CDATA[</head>]]></find>
+      <replace><![CDATA[<xen:include template="csiXF_nodeBg" />
+$0]]></replace>
+    </modification>
+  </public_template_modifications>
+  <bb_code_media_sites/>
+  <bb_codes/>
+</addon>
