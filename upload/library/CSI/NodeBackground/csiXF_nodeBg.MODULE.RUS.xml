@@ -65,9 +65,9 @@ height: 100%;]]></default_value>
     <phrase title="option_csiXF_nodeBg_extraCSS" version_id="1" version_string="1.0.0"><![CDATA[Дополнительные свойства CSS]]></phrase>
     <phrase title="option_csiXF_nodeBg_extraCSS_explain" version_id="1" version_string="1.0.0"><![CDATA[Введите дополнительные свойства CSS, которые будут применены к фону узла.]]></phrase>
     <phrase title="option_csiXF_nodeBg_userGroupID" version_id="2" version_string="1.0.1"><![CDATA[Группы пользователей]]></phrase>
-    <phrase title="option_csiXF_nodeBg_userGroupID_explain" version_id="2" version_string="1.0.1"><![CDATA[Выберите группы пользователей, которым разрешено отображение индивидуального фона узла.]]></phrase>
+    <phrase title="option_csiXF_nodeBg_userGroupID_explain" version_id="2" version_string="1.0.1"><![CDATA[Выберите группы пользователей, которым <strong>разрешено</strong> отображение индивидуального фона узла.]]></phrase>
     <phrase title="option_csiXF_nodeBg_nodeID" version_id="2" version_string="1.0.1"><![CDATA[Форумы]]></phrase>
-    <phrase title="option_csiXF_nodeBg_nodeID_explain" version_id="2" version_string="1.0.1"><![CDATA[Укажите форумы, в которых необходимо запретить отображение индивидуального фона узла.]]></phrase>
+    <phrase title="option_csiXF_nodeBg_nodeID_explain" version_id="2" version_string="1.0.1"><![CDATA[Укажите форумы, в которых <strong>запрещено</strong> отображение индивидуального фона узла.]]></phrase>
     <phrase title="option_group_csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF/MODULE) Фон узла]]></phrase>
     <phrase title="option_group_csiXF_nodeBg_description" version_id="1" version_string="1.0.0"><![CDATA[Настройки фона для узлов.]]></phrase>
   </phrases>

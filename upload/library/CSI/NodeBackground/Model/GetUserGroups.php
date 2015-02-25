@@ -20,7 +20,8 @@ class CSI_NodeBackground_Model_GetUserGroups extends XenForo_Model
     return $this->_getDb()->fetchAll('
       SELECT user_group_id, title
       FROM xf_user_group
-      ORDER BY user_group_id
+      WHERE user_group_id
+      ORDER BY title
     ');
   }
 }
