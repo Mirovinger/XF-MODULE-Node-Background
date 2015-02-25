@@ -43,7 +43,7 @@ height: 100%;]]></default_value>
     </option>
     <option option_id="csiXF_nodeBg_userGroupID" edit_format="callback" data_type="array" can_backup="1">
       <default_value></default_value>
-      <edit_format_params>CSI_NodeBackground_Option_userGroupID::renderOption</edit_format_params>
+      <edit_format_params>CSI_NodeBackground_Option_UserGroups::renderOption</edit_format_params>
       <sub_options>*</sub_options>
       <relation group_id="csiXF_nodeBg" display_order="3"/>
     </option>
@@ -74,7 +74,7 @@ height: 100%;]]></default_value>
   <route_prefixes/>
   <style_properties/>
   <templates>
-    <template title="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[<xen:if is="{$category.node_id} OR {$forum.node_id}">
+    <template title="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[<xen:if is="{xen:helper ismemberof, $visitor, {$xenOptions.csiXF_nodeBg_userGroupID}} AND !in_array({$forum.node_id}, {$xenOptions.csiXF_nodeBg_nodeID})">
   <style type='text/css'>
     .node{$forum.node_id} #headerMover {
       background-image: url('{xen:property imagePath}/nodebg/node_{$forum.node_id}.{$xenOptions.csiXF_nodeBg_fileExt}');
