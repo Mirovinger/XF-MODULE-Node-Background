@@ -4,11 +4,21 @@
   Contacts: http://cyberspace.industries/
   License: LICENSE.ENG.txt
 -->
-<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Node Background" version_string="1.0.0" version_id="1" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Node Background" version_string="1.0.1" version_id="2" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
-  <admin_templates/>
+  <admin_templates>
+    <template title="csiXF_nodeBg_optionList_optionMultiple"><![CDATA[<xen:selectunit label="{$preparedOption.title}" name="{$fieldPrefix}[{$preparedOption.option_id}]" value="{xen:raw $preparedOption.option_value}"
+hint="{$preparedOption.hint}" multiple="true">
+  <xen:options source="$formatParams" selected="{$preparedOption.formatParams.selected}" />
+  <xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
+  <xen:html>
+    <input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
+    {xen:raw $editLink}
+  </xen:html>
+</xen:selectunit>]]></template>
+  </admin_templates>
   <admin_template_modifications/>
   <code_events/>
   <code_event_listeners/>
@@ -31,6 +41,18 @@ height: 100%;]]></default_value>
       <sub_options></sub_options>
       <relation group_id="csiXF_nodeBg" display_order="2"/>
     </option>
+    <option option_id="csiXF_nodeBg_userGroupID" edit_format="callback" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>CSI_NodeBackground_Option_userGroupID::renderOption</edit_format_params>
+      <sub_options>*</sub_options>
+      <relation group_id="csiXF_nodeBg" display_order="3"/>
+    </option>
+    <option option_id="csiXF_nodeBg_nodeID" edit_format="callback" data_type="array" can_backup="1">
+      <default_value></default_value>
+      <edit_format_params>CSI_NodeBackground_Option_Nodes::renderMultiple</edit_format_params>
+      <sub_options>*</sub_options>
+      <relation group_id="csiXF_nodeBg" display_order="4"/>
+    </option>
   </optiongroups>
   <permissions>
     <permission_groups/>
@@ -42,13 +64,17 @@ height: 100%;]]></default_value>
     <phrase title="option_csiXF_nodeBg_fileExt_explain" version_id="1" version_string="1.0.0"><![CDATA[Enter file extensions that are used as background of nodes.]]></phrase>
     <phrase title="option_csiXF_nodeBg_extraCSS" version_id="1" version_string="1.0.0"><![CDATA[Additional CSS properties]]></phrase>
     <phrase title="option_csiXF_nodeBg_extraCSS_explain" version_id="1" version_string="1.0.0"><![CDATA[Enter additional properties CSS, which will be applied to background of nodes.]]></phrase>
+    <phrase title="option_csiXF_nodeBg_userGroupID" version_id="2" version_string="1.0.1"><![CDATA[User Groups]]></phrase>
+    <phrase title="option_csiXF_nodeBg_userGroupID_explain" version_id="2" version_string="1.0.1"><![CDATA[Select user groups who are allowed to display background of nodes.]]></phrase>
+    <phrase title="option_csiXF_nodeBg_nodeID" version_id="2" version_string="1.0.1"><![CDATA[Forums]]></phrase>
+    <phrase title="option_csiXF_nodeBg_nodeID_explain" version_id="2" version_string="1.0.1"><![CDATA[Select forums in which you want to suppress display background of nodes.]]></phrase>
     <phrase title="option_group_csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF/MODULE) Node Background]]></phrase>
     <phrase title="option_group_csiXF_nodeBg_description" version_id="1" version_string="1.0.0"><![CDATA[Background setting for nodes.]]></phrase>
   </phrases>
   <route_prefixes/>
   <style_properties/>
   <templates>
-    <template title="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[<xen:if is="{$category.node_id} OR {$forum.node_id}">
+    <template title="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[<xen:if is="{$category.node_id} OR {$forum.node_id}">
   <style type='text/css'>
     .node{$forum.node_id} #headerMover {
       background-image: url('{xen:property imagePath}/nodebg/node_{$forum.node_id}.{$xenOptions.csiXF_nodeBg_fileExt}');
