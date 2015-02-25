@@ -21,7 +21,7 @@ class CSI_NodeBackground_Model_GetNodes extends XenForo_Model
       SELECT node_id, title, node_type_id
       FROM xf_node
       WHERE node_type_id = ?
-      ORDER BY node_id
+      ORDER BY title
     ', 'Forum');
   }
 }
