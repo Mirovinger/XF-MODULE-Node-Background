@@ -4,14 +4,14 @@
   Contacts: http://cyberspace.industries/
   License: LICENSE.ENG.txt
 -->
-<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.4" version_id="4" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.4" version_id="5" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates>
     <template title="csiXF_nodeBg_optionList_optionMultiple"><![CDATA[<xen:selectunit label="{$preparedOption.title}" name="{$fieldPrefix}[{$preparedOption.option_id}]" value="{xen:raw $preparedOption.option_value}"
-hint="{$preparedOption.hint}" multiple="true">
-  <xen:options source="$formatParams" selected="{$preparedOption.formatParams.selected}" />
+hint="{$preparedOption.hint}" size="10" multiple="true" inputclass="expand">
+  <xen:options source="$formatParams" />
   <xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
   <xen:html>
     <input type="hidden" name="{$listedFieldName}" value="{$preparedOption.option_id}" />
