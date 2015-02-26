@@ -10,7 +10,7 @@
   <admin_style_properties/>
   <admin_templates>
     <template title="csiXF_nodeBg_optionList_optionMultiple"><![CDATA[<xen:selectunit label="{$preparedOption.title}" name="{$fieldPrefix}[{$preparedOption.option_id}]" value="{xen:raw $preparedOption.option_value}"
-hint="{$preparedOption.hint}" size="10" multiple="true" inputclass="expand">
+hint="{$preparedOption.hint}" multiple="true" inputclass="expand">
   <xen:options source="$formatParams" />
   <xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
   <xen:html>
