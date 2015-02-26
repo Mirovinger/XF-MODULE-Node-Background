@@ -8,6 +8,6 @@ class CSI_NodeBackground_Option_UserGroups extends XenForo_Option_UserGroupChoos
   }
   public static function getOption($key)
   {
-    return XenForo_Application::getOptions()->get(sprintf('csiXF_%s', $key));
+    return XenForo_Application::getOptions()->get(sprintf('csiXF_nodeBg_%s', $key));
   }
 }

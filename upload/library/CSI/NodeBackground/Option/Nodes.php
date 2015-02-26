@@ -9,6 +9,6 @@ class CSI_NodeBackground_Option_Nodes extends XenForo_Option_NodeChooser
   }
   public static function getOption($key)
   {
-    return XenForo_Application::getOptions()->get(sprintf('csiXF_%s', $key));
+    return XenForo_Application::getOptions()->get(sprintf('csiXF_nodeBg_%s', $key));
   }
 }
