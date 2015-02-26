@@ -4,7 +4,7 @@ class CSI_NodeBackground_Option_UserGroups extends XenForo_Option_UserGroupChoos
 {
   public static function renderUserGroupChooser(XenForo_View $view, $fieldPrefix, array $preparedOption, $canEdit)
   {
-    return self::_render('csiXF_nodeBg_optionList_optionMultiple', $view, $fieldPrefix, $preparedOption, $canEdit);
+    return self::_render('csiXF_nodeBg_optionList_optionUserGroups', $view, $fieldPrefix, $preparedOption, $canEdit);
   }
   public static function getOption($key)
   {
