@@ -4,7 +4,7 @@
   Contacts: http://cyberspace.industries/
   License: LICENSE.ENG.txt
 -->
-<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.3" version_id="4" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.4" version_id="4" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
@@ -43,13 +43,13 @@ height: 100%;]]></default_value>
     </option>
     <option option_id="csiXF_nodeBg_userGroupID" edit_format="callback" data_type="array" can_backup="1">
       <default_value></default_value>
-      <edit_format_params>CSI_NodeBackground_Option_UserGroups::renderOption</edit_format_params>
+      <edit_format_params>CSI_NodeBackground_Option_UserGroups::renderUserGroupChooser</edit_format_params>
       <sub_options>*</sub_options>
       <relation group_id="csiXF_nodeBg" display_order="3"/>
     </option>
     <option option_id="csiXF_nodeBg_nodeID" edit_format="callback" data_type="array" can_backup="1">
       <default_value></default_value>
-      <edit_format_params>CSI_NodeBackground_Option_Nodes::renderMultiple</edit_format_params>
+      <edit_format_params>CSI_NodeBackground_Option_Nodes::renderNodeChooser</edit_format_params>
       <sub_options>*</sub_options>
       <relation group_id="csiXF_nodeBg" display_order="4"/>
     </option>
