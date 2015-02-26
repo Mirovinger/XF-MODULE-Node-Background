@@ -9,7 +9,8 @@
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates>
-    <template title="csiXF_nodeBg_optionList_optionUserGroups"><![CDATA[<xen:selectunit label="{$preparedOption.title}" name="{$fieldPrefix}[{$preparedOption.option_id}]" value="{xen:raw $preparedOption.option_value}"
+    <template title="csiXF_nodeBg_optionList_optionUserGroups"><![CDATA[<style type="text/css">.xenForm .ctrlUnit > dd .textCtrl[size] {width: 100% !important;}</style>
+<xen:selectunit label="{$preparedOption.title}" name="{$fieldPrefix}[{$preparedOption.option_id}]" value="{xen:raw $preparedOption.option_value}"
 hint="{$preparedOption.hint}" multiple="true" inputclass="expand">
   <xen:options source="$formatParams" />
   <xen:explain>{xen:raw $preparedOption.explain}</xen:explain>
