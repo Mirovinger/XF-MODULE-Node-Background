@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright © 2015 CYBERSPACE Industries. All rights reserved.
+  Copyright © 2015 CYBERSPACE Industries
   Contacts: http://cyberspace.industries/
-  License: LICENSE.ENG.txt
+  License: LICENSE.ENG.txt / LICENSE.RUS.txt
 -->
 <language title="English (US)" date_format="M j, Y" time_format="g:i A" decimal_point="." thousands_separator="," language_code="en-US" text_direction="LTR" addon_id="NewPosts">
   <phrase title="option_csiXF_nodeBg_fileExt" version_id="1" version_string="1.0.0"><![CDATA[Filename extension]]></phrase>
