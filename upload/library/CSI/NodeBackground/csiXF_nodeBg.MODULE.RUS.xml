@@ -2,7 +2,7 @@
 <!--
   Copyright © 2015 CYBERSPACE Industries
   Contacts: http://cyberspace.industries/
-  License: LICENSE.ENG.txt
+  License: LICENSE.ENG.txt / LICENSE.RUS.txt
 -->
 <addon addon_id="csiXF_nodeBg" title="(CSI/XF/MODULE) Фон узла" version_string="1.0.5" version_id="6" url="http://cyberspace.industries/" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
