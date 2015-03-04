@@ -5,14 +5,14 @@
   License: LICENSE.ENG.txt / LICENSE.RUS.txt
 -->
 <language title="English (US)" date_format="M j, Y" time_format="g:i A" decimal_point="." thousands_separator="," language_code="en-US" text_direction="LTR" addon_id="csiXF_nodeBg">
-  <phrase title="option_csiXF_nodeBg_fileExt" version_id="1" version_string="1.0.0"><![CDATA[Filename extension]]></phrase>
-  <phrase title="option_csiXF_nodeBg_fileExt_explain" version_id="1" version_string="1.0.0"><![CDATA[Enter file extensions that are used as background of nodes.]]></phrase>
-  <phrase title="option_csiXF_nodeBg_extraCSS" version_id="1" version_string="1.0.0"><![CDATA[Additional CSS properties]]></phrase>
-  <phrase title="option_csiXF_nodeBg_extraCSS_explain" version_id="1" version_string="1.0.0"><![CDATA[Enter additional properties CSS, which will be applied to background of nodes.]]></phrase>
-  <phrase title="option_csiXF_nodeBg_userGroupID" version_id="2" version_string="1.0.1"><![CDATA[User Groups]]></phrase>
-  <phrase title="option_csiXF_nodeBg_userGroupID_explain" version_id="2" version_string="1.0.1"><![CDATA[Select user groups who are <strong>allowed</strong> to display background of nodes.]]></phrase>
-  <phrase title="option_csiXF_nodeBg_nodeID" version_id="2" version_string="1.0.1"><![CDATA[Forums]]></phrase>
-  <phrase title="option_csiXF_nodeBg_nodeID_explain" version_id="2" version_string="1.0.1"><![CDATA[Select forums in which you want to <strong>suppress</strong> display background of nodes.]]></phrase>
-  <phrase title="option_group_csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF/MODULE) Node Background]]></phrase>
-  <phrase title="option_group_csiXF_nodeBg_description" version_id="1" version_string="1.0.0"><![CDATA[Background setting for nodes.]]></phrase>
+  <phrase title="option_csiXF_nodeBg_fileExt" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[Filename extension]]></phrase>
+  <phrase title="option_csiXF_nodeBg_fileExt_explain" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[Enter file extensions that are used as background of nodes.]]></phrase>
+  <phrase title="option_csiXF_nodeBg_extraCSS" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[Additional CSS properties]]></phrase>
+  <phrase title="option_csiXF_nodeBg_extraCSS_explain" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[Enter additional properties CSS, which will be applied to background of nodes.]]></phrase>
+  <phrase title="option_csiXF_nodeBg_userGroupID" addon_id="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[User Groups]]></phrase>
+  <phrase title="option_csiXF_nodeBg_userGroupID_explain" addon_id="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[Select user groups who are <strong>allowed</strong> to display background of nodes.]]></phrase>
+  <phrase title="option_csiXF_nodeBg_nodeID" addon_id="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[Forums]]></phrase>
+  <phrase title="option_csiXF_nodeBg_nodeID_explain" addon_id="csiXF_nodeBg" version_id="2" version_string="1.0.1"><![CDATA[Select forums in which you want to <strong>suppress</strong> display background of nodes.]]></phrase>
+  <phrase title="option_group_csiXF_nodeBg" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[(CSI/XF/MODULE) Node Background]]></phrase>
+  <phrase title="option_group_csiXF_nodeBg_description" addon_id="csiXF_nodeBg" version_id="1" version_string="1.0.0"><![CDATA[Background setting for nodes.]]></phrase>
 </language>
